@@ -16,9 +16,9 @@
 }
 .container{
     background-color:#222222;
-    height: 70%;
     width: 50%;
     border-radius: 0.5rem;
+    padding: 2rem;
 }
 .input-container{
     display: flex;
@@ -37,9 +37,12 @@
     font-weight: 600;
     font-size: 16px;
 }
-.search-btn{
+.input-btns{
+    display: flex;
+}
+.search-btn, .your-location{
     border-radius: 3px;
-    margin: 0 0.4rem;
+    margin: 0 0.6rem;
     font-size: medium;
     background-color: #222222;
     color: #EEEEEE;
@@ -101,6 +104,7 @@
     align-items: center;
     transition: all 0.2s ease-in-out ;
 }
+
 .other-details{
     width: 35%;
     margin: 0 0.3rem;
@@ -123,11 +127,40 @@
     margin-top: 0.4rem;
     font-size: small;
 }
-.data .value{
+.temp-unit{
+    font-size: 60px;
+}
+.value-unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family:'Noto Sans', sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
-.temp-unit{
-    font-size: 60px;
+.value-unit span{
+    margin: 0 0.2rem;
+}
+.forecast
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin:2rem 0.75rem;
+    
+}
+.forecast-details .date-time
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+.forecast-value{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.forecast-value .data, .forecast-value .forecast-unit
+{
+    font-weight: 700;
+    font-family:'Noto Sans', sans-serif;
 }

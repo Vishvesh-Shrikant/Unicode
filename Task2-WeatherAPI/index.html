@@ -17,9 +17,15 @@
                 <!--INPUT BOX FOR LOCATION INPUT-->
                 <form class="input-container">
                     <input type="text" placeholder="Enter city name" class="input-box"/>
-                    <button class="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <div class="input-btns"> 
+                        <button class="your-location">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </button>
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    
                 </form>
 
                 <!--TOGGLE FOR CELCIUS-FARHENHEIT-->
@@ -33,7 +39,7 @@
                 <div class="display-details">
                     <!--TEMPERATURE-->
                     <div class="temp-details">
-                        <p class="temp">56</p>
+                        <p class="temp">-</p>
                         <span class="temp-unit">°C</span>
                     </div>
 
@@ -43,17 +49,69 @@
                             <img src="images/wind.png" class="detail-img"/>
                             <div class="data">
                                 <p class="title">wind speed</p>
-                                <p class="value">-</p>
+                                <div class="value-unit">
+                                    <p class="value">-</p>
+                                    <span> mph</span>
+                                </div>
                             </div>
                         </div>
                         <div class="humidity box">
                             <img src="images//humidity.png" class="detail-img"/>
                             <div class="data">
                                 <p class="title">Humidity</p>
-                                <p class="value">-</p>
+                                <div class="value-unit">
+                                    <p class="value">-</p>
+                                    <span> %</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="forecast">
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="forecast-details"> 
+                        <p class="date-time"></p>
+                        <div class="forecast-value">
+                            <p class="data"></p>
+                            <span class="forecast-unit">°C</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
