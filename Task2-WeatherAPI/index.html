@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <title>WeatherAPI</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="container">
+                <!--INPUT BOX FOR LOCATION INPUT-->
+                <form class="input-container">
+                    <input type="text" placeholder="Enter city name" class="input-box"/>
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!--TOGGLE FOR CELCIUS-FARHENHEIT-->
+                <div class="toggle">
+                    <div class="toggler"></div>
+                    <button class="temp-button" onclick="celciusClick()">Celcius</button>
+                    <button class="temp-button" onclick="farhenheitClick()">Farhenheit</button>
+                </div>
+
+                <!--DISPLAY DETAILS-->
+                <div class="display-details">
+                    <!--TEMPERATURE-->
+                    <div class="temp-details">
+                        <p class="temp">56</p>
+                        <span class="temp-unit">°C</span>
+                    </div>
+
+                    <!--WIND SPEED AND HUMIDITY-->
+                    <div class="other-details">
+                        <div class="wind-speed box">
+                            <img src="images/wind.png" class="detail-img"/>
+                            <div class="data">
+                                <p class="title">wind speed</p>
+                                <p class="value">-</p>
+                            </div>
+                        </div>
+                        <div class="humidity box">
+                            <img src="images//humidity.png" class="detail-img"/>
+                            <div class="data">
+                                <p class="title">Humidity</p>
+                                <p class="value">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

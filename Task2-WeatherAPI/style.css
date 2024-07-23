@@ -1,0 +1,133 @@
+    *{
+    margin:0; 
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.main{
+    background-color:#EEEEEE;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: #EEEEEE;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color:#222222;
+    height: 70%;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+.input-container{
+    display: flex;
+    margin: 0.75rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.input-box{
+    outline: none;
+    background-color: #222222;
+    color: #EEEEEE;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.search-btn{
+    border-radius: 3px;
+    margin: 0 0.4rem;
+    font-size: medium;
+    background-color: #222222;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+.toggle{
+    margin: 0.75rem;
+    padding: 0.3rem;
+    border:  1px solid white;
+    border-radius: 1rem;
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    background-color: #222222;
+}
+.temp-button{
+    background: transparent;
+    color: #EEEEEE;
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+    width: 50%;
+    z-index: 3;
+}
+.toggler
+{
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 1rem; 
+    transition: all 0.2s ease-in-out ;
+    width: 50%;
+    height: 100%;
+    background-color: #09814A;
+}
+
+
+
+
+.display-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+}
+.temp-details{
+    width: 65%;
+    height: 100%;
+    margin: 0 0.75rem;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 108px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out ;
+}
+.other-details{
+    width: 35%;
+    margin: 0 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.detail-img{
+    width: 4rem;
+    height: 60%;
+    margin: 0.4rem 0.6rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.title{
+    margin-top: 0.4rem;
+    font-size: small;
+}
+.data .value{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.temp-unit{
+    font-size: 60px;
+}
