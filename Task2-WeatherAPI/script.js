@@ -10,7 +10,7 @@ let unit="metric"
 const toggleButton=document.querySelector(".toggler")
 const tempUnit=document.querySelector(".temp-unit")
 
-//DOM elements for displaying json data
+//DOM elements for displaying current temperature, wind speed and humidity
 const yourLocation=document.querySelector(".your-location")
 const search=document.querySelector(".search-btn")
 const input=document.querySelector("form input");
@@ -18,6 +18,9 @@ const tempetaure=document.querySelector(".temp-details .temp")
 const windSpeed=document.querySelector(".wind-speed .data .value")
 const humidity=document.querySelector(".humidity .data .value")
 
+//DOM elements for forecast details
+const forecast_container=document.querySelector(".forecast")
+const forecast_unit=document.querySelectorAll(".forecast-unit")
 const forecast_dates=document.querySelectorAll(".date-time")
 const forecast_data=document.querySelectorAll(".forecast-details .data")
 
@@ -27,6 +30,10 @@ const celciusClick= async()=>{
     toggleButton.style.left='0'
     unit="metric"
     tempUnit.innerText="°C"
+    for(i=0;i<forecast_unit.length;i++)
+    {
+        forecast_unit[i].innerText="°C"
+    }
     if(input.value!='')
     {
         getCurrentWeatherData(input.value)
@@ -37,6 +44,10 @@ const farhenheitClick=async ()=>{
     toggleButton.style.left='50%'
     unit="imperial"
     tempUnit.innerText="°F"
+    for(i=0;i<forecast_unit.length;i++)
+    {
+        forecast_unit[i].innerText="°F"
+    }
     if(input.value!='')
     {
         getCurrentWeatherData(input.value)
@@ -119,7 +130,10 @@ const getWeatherForecast=async (city)=>{
     
     let response=await fetch(URL)
     let data=await response.json()
-    for(let i=0;i<6;i++)
+    //making the forecast conatiner visible 
+    forecast_container.style.visibility="visible"
+    //adding values to the forecast elements
+    for(let i=0;i<forecast_dates.length;i++)
     {
         forecast_dates[i].innerText=data.list[i].dt_txt
         forecast_data[i].innerText=Math.ceil(data.list[i].main.temp)
