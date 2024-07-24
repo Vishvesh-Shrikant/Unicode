@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!--RESPONSIVE NAVIGATION BAR-->
+    <header class=" h-24 w-full px-sectionPadding max-mobileL:px-mobilePadding flex justify-between items-center relative ">
+        <div class="flex justify-center items-center">
+            <img src="Images/Logo.png" class="h-3/4"/>
+        </div>
+        <ul class="h-4/5 w-1/2 flex justify-evenly items-end pb-2 max-md:flex-col max-md:justify-start max-md:items-start max-md:fixed max-md:top-0 max-md:h-screen max-md:w-2/5 max-md:bg-white max-md:px-10 max-md:py-20 max-md:duration-300 max-md:-right-1/2 max-md:ease-in-out max-md:z-50 max-md:shadow-lg">
+            <li class="list-none max-md:my-2"><a class="font-Inter active text-primary hover:text-buttons cursor-pointer">Home </a></li>
+            <li class="list-none max-md:my-2"><a class="font-Inter text-primary hover:text-buttons cursor-pointer">About</a></li>
+            <li class="list-none max-md:my-2"><a class="font-Inter text-primary hover:text-buttons cursor-pointer">Reviews</a></li>
+            <li class="list-none max-md:my-2"><a class="font-Inter text-primary hover:text-buttons cursor-pointer">Contact</a></li>
+            <li class="list-none md:hidden max-md:my-2"><a class="font-Inter text-primary ">Book a Table</a></li>
+            <li class="list-none md:hidden max-md:my-2 max-md:absolute max-md:top-4" onclick="changeNavbar()"><a class="font-Inter text-primary "><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <div class="md:hidden flex items-center" onclick="changeNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="bg-buttons h-16 w-1/5 shadow-md rounded-br-xl rounded-bl-sm rounded-tl-xl rounded-tr-sm font-DavidLibre flex justify-center items-center text-lg text-white cursor-pointer max-md:hidden">
+            Book a Table
+        </div>
+    </header>
+
+    <!-- RESPONSIVE HERO SECTION-->
+    <div class="px-sectionPadding max-mobileL:px-mobilePadding flex items-center justify-between my-20 max-lg:flex-col-reverse">
+        <!--TEXTS-->
+        <div class="flex flex-col justify-center items-start w-2/5 max-lg:w-full max-lg:mt-16">
+            <p class="text-primary text-6xl max-mobileL:text-4xl font-DavidLibre font-bold">We provide the best food for you</p>
+            <p class="text-base text-[#5C6574] mt-12 font-Inter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, architecto! Neque delectus asperiores laboriosam labore inventore. Possimus vel tenetur repellendus. Odio magni hic esse earum totam nam mollitia aliquam atque?</p>
+            <!--BUTTONS-->
+            <div class="flex justify-between items-center w-3/4 mt-12 font-DavidLibre">
+                <div class="py-3 w-3/5 px-5 text-lg bg-primary text-white flex justify-center items-center shadow-md rounded-br-xl rounded-bl-sm rounded-tl-xl rounded-tr-sm  cursor-pointer">
+                    Menu
+                </div>
+                <div class="py-3 w-4/5 text-lg bg-buttons text-white flex justify-center items-center shadow-md rounded-br-xl rounded-bl-sm rounded-tl-xl rounded-tr-sm mx-2 cursor-pointer">
+                    Book a table
+                </div>
+            </div>
+            <!-- SOCIAL MEDIA-->
+             <div class="flex w-2/5 max-sm:w-3/5 max-mobileL:w-full justify-between items-end mt-10">
+                <div class="w-10 h-10 rounded-full border border-black flex justify-center items-center text-xl cursor-pointer">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full border border-black flex justify-center items-center text-xl cursor-pointer">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full border border-black flex justify-center items-center text-xl cursor-pointer">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+             </div>
+        </div>
+        <!--IMAGES-->
+        <div class="relative w-1/2 max-md:w-3/4 max-sm:w-4/5 max-mobileL:w-full">
+            <div class="w-4/5">
+                <img src="Images/Hero1.png" class="">
+            </div>
+            <div >
+                <img src="Images/hero-side.png" class="absolute w-1/3 top-1/2 -right-4 -z-10">
+            </div>
+            <div>
+                <img src="Images/hero-dish.png" class="z-20 absolute w-1/2 max-mobileL:w-2/5 top-1/2 -left-32 max-sm:-left-20 max-mobileL:-left-10">
+            </div>
+        </div>
+    </div>
+
+    <!--RESPONSIVE Special Dishes-->
+    <div class="flex flex-col items-center justify-start bg-gray-100 px-sectionPadding max-mobileL:px-mobilePadding pt-20">
+        <p class="text-6xl max-md:text-3xl font-DavidLibre font-bold text-center">Our Special Dishes</p>
+        <p class="text-base font-Inter text-[#5C6574] mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <div class="w-full max-mobileL:w-4/5 grid grid-cols-4 max-lg:grid-cols-2 max-mobileL:grid-cols-1 gap-x-10 max-lg:gap-y-32 mt-24">
+            
+            <div class="px-2 pb-10 mt-3 h-72 bg-white flex flex-col justify-end items-center rounded-br-3xl rounded-bl-md rounded-tl-3xl rounded-tr-md ">
+                <div>
+                    <img src="Images/dish-1.png" alt="" class="mb-4 max-lg:h-52">
+                </div>
+                <p class="text-lg font-DavidLibre text-primary font-semibold my-3">Lumpia with Sauce</p>
+                <p class="text-[#5C6574] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="px-2 pb-10 mt-3 h-72 border-2 border-white flex flex-col justify-end items-center rounded-br-3xl rounded-bl-md rounded-tl-3xl rounded-tr-md ">
+                <div>
+                    <img src="Images/dish-2.png" alt="" class="mb-4 max-lg:h-52">
+                </div>
+                <p class="text-lg font-DavidLibre text-primary font-semibold my-3">Fish and Veggie</p>
+                <p class="text-[#5C6574] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="px-2 pb-10 mt-3 h-72 border-2 border-white flex flex-col justify-end items-center rounded-br-3xl rounded-bl-md rounded-tl-3xl rounded-tr-md ">
+                <div>
+                    <img src="Images/dish-3.png" alt="" class="mb-4 max-lg:h-52">
+                </div>
+                <p class="text-lg font-DavidLibre text-primary font-semibold my-3">Tofu Chili</p>
+                <p class="text-[#5C6574] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="px-2 pb-10 mt-3 h-72 border-2 border-white flex flex-col justify-end items-center rounded-br-3xl rounded-bl-md rounded-tl-3xl rounded-tr-md ">
+                <div>
+                    <img src="Images/dish-4.png" alt="" class="mb-4 max-lg:h-52">
+                </div>
+                <p class="text-lg font-DavidLibre text-primary font-semibold my-3">Egg and Cucumber</p>
+                <p class="text-[#5C6574] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <!-- RESPONSIVE WELCOME TO RESTAURANT -->
+    <div class="px-sectionPadding max-mobileL:px-mobilePadding py-20 bg-gray-100 flex flex-col items-center">
+        <img src="Images/divider.png" class="w-1/6 max-md:w-1/3">
+        <div class="flex items-center justify-between mt-20 max-md:flex-col">
+            <div class="relative w-4/5 max-md:w-full">
+                <div class='w-4/5 max-sm:w-full'>
+                    <img src="Images/hero-dish.png" class="h-full w-full">
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-start w-1/2 max-md:w-full">
+                <p class="text-primary text-6xl max-mobileL:text-4xl font-DavidLibre font-bold">Wecome to Our Restaurant</p>
+                <p class="text-base text-[#5C6574] mt-12 font-Inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <!--BUTTONS-->
+                <div class="flex justify-between items-center w-3/4 mt-12 font-DavidLibre">
+                    <div class="py-3 w-3/5 px-5 text-lg bg-primary text-white flex justify-center items-center shadow-md rounded-br-xl rounded-bl-sm rounded-tl-xl rounded-tr-sm  cursor-pointer">
+                        Menu
+                    </div>
+                    <div class="py-3 w-4/5 text-lg bg-buttons text-white flex justify-center items-center shadow-md rounded-br-xl rounded-bl-sm rounded-tl-xl rounded-tr-sm mx-2 cursor-pointer">
+                        Book a table
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!--RESPONSIVE NEWSLETTER-->
+    <div class="px-sectionPadding max-mobileL:px-mobilePadding flex justify-center items-center my-10">
+        <div class="bg-[url('Images/newsletter.png')] w-4/5 max-lg:w-full py-16 max-mobileL:px-4 bg-cover bg-no-repeat flex flex-col justify-center items-center rounded-3xl">
+            <div class="text-center">
+                <p class="text-5xl max-sm:text-4xl font-bold font-DavidLibre text-white">Get Or Promo Code by</p>
+                <p class="text-5xl max-sm:text-4xl font-bold font-DavidLibre text-white">Subscribing To our  Newsletter</p>
+            </div>
+            <div class="flex justify-between items-center font-Inter my-8 bg-white max-mobileM:flex-col  py-2 px-3 w-3/4 max-md:w-5/6 max-mobileL:w-full rounded-md">
+                <input class="outline-none border-none font-xl max-mobileM:w-full w-3/5 max-sm:w-1/2" placeholder="Enter your email"/>
+                <button class="bg-buttons text-white max-md:text-sm py-2 px-3 w-1/5 max-sm:w-1/3 rounded-md max-mobileL:w-full max-mobileL:mt-5">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESPONSIVE FOOTER-->
+    <div class="px-sectionPadding max-mobileL:px-mobilePadding bg-[url('Images/footer.png')] w-full flex max-lg:flex-col justify-between items-start bg-center bg-no-repeat py-10">
+        <!--RESTAURANT DETAILS-->
+        <div class="w-1/2 -mt-6 max-lg:w-full max-lg:mb-10">
+            <div class="mb-6">
+                <img src="Images/Logo.png">
+            </div>
+            <div class="font-Inter flex">
+                <p class="text-[#5C6574] text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <span class="underline">Learn more</span></p>
+            </div>
+            <p class="font-Inter font-bold text-sm text-primary my-6">OPENING HOURS</p>
+            <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-4  font-Inter text-sm font-light">
+                <div>
+                    <p>Monday - Friday</p>
+                    <p>8:00am to 9:00pm</p>
+                </div>
+                <div>
+                    <p>Monday - Friday</p>
+                    <p>8:00am to 9:00pm</p>
+                </div>
+                <div>
+                    <p>Monday - Friday</p>
+                    <p>8:00am to 9:00pm</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--QUICK LINES-->
+        <div class=" grid grid-cols-3 max-sm:grid-cols-2 max-sm:gap-8 w-1/2 lg:mx-5 max-lg:w-full">
+            <div class="flex flex-col justify-center items-start text-sm">
+                <p class="font-bold text-primary">NAVIGATION</p>
+                <div class="text-[#5C6574] grid grid-rows-4 gap-y-3 mt-3">
+                    <p>Menu</p>
+                    <p>About Us</p>
+                    <p>Contact us</p>
+                    <p>Main dishes</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-start text-sm">
+                <p class="font-bold text-primary">DISHES</p>
+                <div class="text-[#5C6574] grid grid-rows-4 gap-y-3 mt-3">
+                    <p>Fish & Veggies</p>
+                    <p>Tofu Chilli</p>
+                    <p>Egg & Cucumber</p>
+                    <p>Lumpia w/Suace</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-start text-sm">
+                <p class="font-bold text-primary">FOLLOW US</p>
+                <div class="text-[#5C6574] grid grid-rows-4 gap-y-3 mt-3">
+                    <div class="flex justify-start items-center">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p class="mx-2">Instagram</p>
+                    </div>
+                    <div class="flex justify-start items-center">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p class="mx-2">Facebook</p>
+                    </div>
+                    <div class="flex justify-start items-center">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p class="mx-2">Twitter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const navbar=document.querySelector("header ul")
+        let isNavbar=false
+        const changeNavbar=()=>{
+            isNavbar=!isNavbar
+            if(!isNavbar)
+                navbar.style.right="-50%"
+            else if(isNavbar)
+                navbar.style.right=0
+        }
+        
+
+    </script>
+</body>
+</html>
