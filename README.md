@@ -1,6 +1,6 @@
 # Unicode-Frontend
 
-First task completed: Task 2- Weather App ( using HTML, CSS and Javascript)
+1) First task completed: Task 2- Weather App ( using HTML, CSS and Javascript)
 Its feautures include:
 --> Current temperature, wind speed, humidity and weather forecast for the location entered by user , or the location of the user accepted from the browser
 
@@ -12,3 +12,10 @@ Link for Forecast API: https://openweathermap.org/forecast5#5days
 
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+
+2) Second task completed: Task 1- Restaurant Website UI Clone
+
+The UI clone was made using HTML and Tailwind CSS. The clone has been made responsive to various screen sizes, using in-built tailwind utility classes for media queries 
+
+![alt text](image-2.png) ![alt text](image-3.png)
