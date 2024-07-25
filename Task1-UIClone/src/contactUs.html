@@ -13,12 +13,12 @@
             <img src="Images/Logo.png" class="h-3/4"/>
         </div>
         <ul class="h-4/5 w-1/2 flex justify-evenly items-end pb-2 max-md:flex-col max-md:justify-start max-md:items-start max-md:fixed max-md:top-0 max-md:h-screen max-md:w-2/5 max-md:bg-white max-md:px-10 max-md:py-20 max-md:duration-300 max-md:-right-1/2 max-md:ease-in-out max-md:z-50 max-md:shadow-lg">
-            <li class="list-none max-md:my-2"><a href="index.html" class="font-Inter text-primary hover:text-buttons cursor-pointer">Home </a></li>
-            <li class="list-none max-md:my-2"><a href="aboutUs.html" class="font-Inter text-primary hover:text-buttons cursor-pointer">About</a></li>
-            <li class="list-none max-md:my-2"><a href="#" class="font-Inter active text-primary hover:text-buttons cursor-pointer">Reviews</a></li>
-            <li class="list-none max-md:my-2"><a href="contactUs.html" class="font-Inter text-primary hover:text-buttons cursor-pointer">Contact</a></li>
-            <li class="list-none md:hidden max-md:my-2"><a class="font-Inter text-primary ">Book a Table</a></li>
-            <li class="list-none md:hidden max-md:my-2 max-md:absolute max-md:top-4" onclick="changeNavbar()"><a class="font-Inter text-primary "><i class="fa-solid fa-xmark"></i></a></li>
+            <li class="list-none max-md:my-3"><a href="index.html" class="font-Inter text-primary hover:text-buttons cursor-pointer">Home </a></li>
+            <li class="list-none max-md:my-3"><a href="aboutUs.html" class="font-Inter text-primary hover:text-buttons cursor-pointer">About</a></li>
+            <li class="list-none max-md:my-3"><a href="review.html" class="font-Inter  text-primary hover:text-buttons cursor-pointer">Reviews</a></li>
+            <li class="list-none max-md:my-3"><a href="#" class="font-Inter text-primary active hover:text-buttons cursor-pointer">Contact</a></li>
+            <li class="list-none md:hidden max-md:my-3"><a class="font-Inter text-primary ">Book a Table</a></li>
+            <li class="list-none md:hidden max-md:my-3 max-md:absolute max-md:top-4" onclick="changeNavbar()"><a class="font-Inter text-primary "><i class="fa-solid fa-xmark"></i></a></li>
         </ul>
         <div class="md:hidden flex items-center" onclick="changeNavbar()">
             <i class="fa-solid fa-bars"></i>
@@ -27,54 +27,47 @@
             Book a Table
         </div>
     </header>
-    <!--RESPONSIVE REVIEW SECTION-->
-    <div class=" px-sectionPadding max-mobileL:px-mobilePadding bg-[url('Images/reviewImg.png')] w-full bg-no-repeat bg-left-top mt-20 flex flex-col justify-center items-center ">
-        <!--HEADING-->
-        <div class="text-center flex flex-col items-center">
-            <p class="text-primary text-6xl max-mobileL:text-4xl font-DavidLibre font-bold">Our Happy Customers</p>
+    <!--CONATCT US FORM -->
+    <div class="px-sectionPadding max-mobileL:px-mobilePadding my-30 w-full flex flex-col justify-center items-center relative ">
+        <div class="w-3/4 max-sm:w-full absolute top-0 opacity-25 -z-10">
+            <img src="Images/reviewImg.png">
+        </div>
+        <div class="text-center flex flex-col items-center my-20">
+            <p class="text-primary text-6xl max-mobileL:text-4xl font-DavidLibre font-bold">Your Feedback</p>
             <p class="text-base text-[#5C6574] mt-4 font-Inter w-3/5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, architecto! Neque delectus asperiores laboriosam labore </p>
         </div>
-        <!--REVIEWS-->
-        <div class=" flex flex-col justify-center items-center w-full mt-10">
-            <div class="flex flex-col justify-between items-center w-1/2 max-md:w-full shadow-md rounded-br-3xl rounded-bl-lg rounded-tl-3xl rounded-tr-lg font-Inter bg-white text-center text-[#5C6574] relative p-10 my-10">
-                <div class="absolute -top-10">
-                    <img src="Images/reviewperson1.png">
-                </div>
-                <p class="w-3/4 mt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod animi sint necessitatibus aliquid excepturi dignissimos natus. Vitae adipisci excepturi enim suscipit harum nobis nemo, corporis consectetur cum. Aperiam, fuga quidem!</p>
-
-                <div class="mt-8">
-                    <p class="text-primary font-bold">Ama Ampomah</p>
-                    <p class="text-[#5C6574]">CEO and Founded Inc</p>
-                </div>
+        <!--NAME-->
+        <div class=" flex max-md:flex-col w-full justify-between items-center my-3">
+            <div class="flex flex-col justify-center items-start font-semibold w-full">
+                <p> First Name:</p>
+                <input class="text-base font-Inter p-2 bg-transparent border border-black rounded-sm  w-5/6 max-md:w-full" placeholder="Enter first name"/>
             </div>
-
-            <div class="flex flex-col justify-between items-center w-1/2 max-md:w-full shadow-md rounded-br-3xl rounded-bl-lg rounded-tl-3xl rounded-tr-lg font-Inter bg-white text-center text-[#5C6574] relative p-10 my-10">
-                <div class="absolute -top-10">
-                    <img src="Images/reviewperson2.png">
-                </div>
-                <p class="w-3/4 mt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod animi sint necessitatibus aliquid excepturi dignissimos natus. Vitae adipisci excepturi enim suscipit harum nobis nemo, corporis consectetur cum. Aperiam, fuga quidem!</p>
-
-                <div class="mt-8">
-                    <p class="text-primary font-bold">Kweku Annan</p>
-                    <p class="text-[#5C6574]">CEO and Founded Inc</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col justify-between items-center w-1/2 max-md:w-full shadow-md rounded-br-3xl rounded-bl-lg rounded-tl-3xl rounded-tr-lg font-Inter bg-white text-center text-[#5C6574] relative p-10 my-10">
-                <div class="absolute -top-10">
-                    <img src="Images/reviewperson1.png">
-                </div>
-                <p class="w-3/4 mt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod animi sint necessitatibus aliquid excepturi dignissimos natus. Vitae adipisci excepturi enim suscipit harum nobis nemo, corporis consectetur cum. Aperiam, fuga quidem!</p>
-
-                <div class="mt-8">
-                    <p class="text-primary font-bold">Ama Ampomah</p>
-                    <p class="text-[#5C6574]">CEO and Founded Inc</p>
-                </div>
+            <div class="flex flex-col justify-center items-start font-semibold w-full max-md:my-2">
+                <p>Last Name:</p>
+                <input class="text-base font-Inter p-2 bg-transparent border border-black rounded-sm  w-5/6 max-md:w-full" placeholder="Enter last name"/>
             </div>
         </div>
+        <div class="flex flex-col justify-center items-start font-semibold w-full my-3">
+            <p> Phone Number:</p>
+            <input class="text-base font-Inter p-2 bg-transparent border border-black rounded-sm  w-3/5 max-md:w-full" placeholder="Enter phone number"/>
+        </div>
+        <div class="flex flex-col justify-center items-start font-semibold w-full my-3">
+            <p> Email:</p>
+            <input class="text-base font-Inter p-2 bg-transparent border border-black rounded-sm  w-3/5 max-md:w-full" placeholder="Enter email"/>
+        </div>
+        <div class="flex flex-col justify-center items-start font-semibold w-full my-3">
+            <p>Your feedback/ inquiries</p>
+            <textarea rows="6" cols="80" class="w-3/5 max-md:w-full bg-transparent border border-black outline-none rounded-sm resize-none p-2" placeholder="Enter your feedback here"></textarea>
+        </div>
+
+
+
+        
+        
+
     </div>
-    <!-- RESPONSIVE FOOTER-->
-    <div class="px-sectionPadding max-mobileL:px-mobilePadding bg-[url('Images/footer.png')] w-full flex max-lg:flex-col justify-between items-start bg-center bg-no-repeat py-10 mt-20">
+     <!-- RESPONSIVE FOOTER-->
+     <div class="px-sectionPadding max-mobileL:px-mobilePadding bg-[url('Images/footer.png')] w-full flex max-lg:flex-col justify-between items-start bg-center bg-no-repeat py-10 mt-20">
         <!--RESTAURANT DETAILS-->
         <div class="w-1/2 -mt-6 max-lg:w-full max-lg:mb-10">
             <div class="mb-6">
