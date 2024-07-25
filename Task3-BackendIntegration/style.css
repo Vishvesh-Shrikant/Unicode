@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.sectionPadding{
+    padding: 3rem;
+}
+body{
+    background-color: #BBBBBB;
+}
+.title{
+    font-size: 3rem;
+    font-family: 'raleway', sans-serif;
+}
+.main{
+    position: relative;
+}
+.card-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card, .card2, .card3{
+    width: 25%;
+    height: 40vh;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #01172F;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-family: 'raleway', sans-serif;
+    position: relative;
+    font-size: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
+.card{
+    color: #08A4BD;
+}
+.card2{
+    color: #D1E3DD;
+    
+}
+.card3{
+    color: #FAA381;
+}
+
+.event-name{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+    transition: all 0.2s ease-in-out;
+}
+.event .data{
+    margin: 0 0.6rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.clicked{
+    transform: scale(1.1, 1.2);
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+    filter: drop-shadow(2px 2px 2px black);
+} 
