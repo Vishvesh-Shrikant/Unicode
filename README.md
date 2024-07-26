@@ -19,3 +19,12 @@ Link for Forecast API: https://openweathermap.org/forecast5#5days
 The UI clone was made using HTML and Tailwind CSS. The clone has been made responsive to various screen sizes, using in-built tailwind utility classes for media queries 
 
 ![alt text](image-2.png) ![alt text](image-3.png)
+
+3) Third Task Completed: Task 3- Backend Integration
+
+Its features include:
+--> Usgae of async await to tackle the asynchronous nature of API fetching and HTTP requests
+--> Displaying the data fetched from the API on the front end in the form of cards that have hover animations
+--> Dynamically displaying elaborate details of event when the event card is clicked. The function displays the data by accpeting the unique event id of the event 
+
+![alt text](image-4.png) ![alt text](image-5.png)
