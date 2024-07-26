@@ -1,6 +1,6 @@
 # Unicode-Frontend
 
-1) First task completed: Task 2- Weather App ( using HTML, CSS and Javascript)
+1) First task completed: Frontend Task 2- Weather App ( using HTML, CSS and Javascript)
 Its feautures include:
 --> Current temperature, wind speed, humidity and weather forecast for the location entered by user , or the location of the user accepted from the browser
 
@@ -14,13 +14,13 @@ Link for Forecast API: https://openweathermap.org/forecast5#5days
 ![alt text](image-1.png)
 
 
-2) Second task completed: Task 1- Restaurant Website UI Clone
+2) Second task completed: Frontend Task 1- Restaurant Website UI Clone
 
 The UI clone was made using HTML and Tailwind CSS. The clone has been made responsive to various screen sizes, using in-built tailwind utility classes for media queries 
 
 ![alt text](image-2.png) ![alt text](image-3.png)
 
-3) Third Task Completed: Task 3- Backend Integration
+3) Third Task Completed: Frontend Task 3- Backend Integration
 
 Its features include:
 --> Usgae of async await to tackle the asynchronous nature of API fetching and HTTP requests
@@ -28,3 +28,11 @@ Its features include:
 --> Dynamically displaying elaborate details of event when the event card is clicked. The function displays the data by accpeting the unique event id of the event 
 
 ![alt text](image-4.png) ![alt text](image-5.png)
+
+
+4) Fourth Task Completed: Backend Task 1 - String Manipulation using javacript
+The problem was solved by:
+--> finding the unique characters and storing them in an array
+--> looping through the array and counting frequency in the string 
+
+![alt text](image-6.png)
