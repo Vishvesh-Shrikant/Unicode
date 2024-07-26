@@ -1,4 +1,5 @@
 let str=prompt("Enter a string")
+console.log("Iput string: "+str)
 str=str.toLowerCase()
 str=str.replace(" ","")
 
