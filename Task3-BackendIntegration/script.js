@@ -13,7 +13,6 @@ const getData=async ()=>{
 
 const selectedData=(data, id, textColour)=>
 {
-    console.log("Hello World")
     for(let i=0; i<data.length;i++)
     {
         if(data[i]._id==id)
