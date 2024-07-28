@@ -26,7 +26,7 @@ console.log(count)
 for(let key in char_arr)
 {
     freq1+=char_arr[key]+" "
-    freq2+=key+":"+char_arr[key]+" "
+    freq2+=key+":"+char_arr[key]+", "
 }
 console.log(freq1)
 console.log(freq2)
