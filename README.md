@@ -36,3 +36,12 @@ The problem was solved by:
 --> looping through the array and counting frequency in the string 
 
 ![alt text](image-6.png)
+
+5) Fifth Task Completed: Backend Task 2- Fetching data using get 
+--> The task was completed by using GET requests from various paths of the url 
+--> each path fetches a different data and that is displayed on the screen
+--> a single character is displayed when the id of the character is part of the url 
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
