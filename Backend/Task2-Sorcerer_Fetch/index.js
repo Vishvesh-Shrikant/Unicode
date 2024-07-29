@@ -16,7 +16,10 @@ app.get('/characters/:id', async (req,res)=>{
     let data= await response.json()
     let id=req.params.id
     let newData=data.filter((datas)=> datas.id===id)
-    res.status(200).send(newData)
+    if(newData.length===0)
+        return res.status(404).send("NO DATA FOUND")
+    else
+        res.status(200).send(newData)
 })
 app.get('/staff', async (req,res)=>{
     let response= await fetch("https://hp-api.onrender.com/api/characters/staff")
