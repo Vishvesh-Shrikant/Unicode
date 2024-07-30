@@ -37,7 +37,6 @@ app.get('/spells', async (req,res)=>{
     res.status(200).send(data)
 })
 
-const myServer=http.createServer(app)
-myServer.listen(port,()=>{
+app.listen(port,()=>{
     console.log(`Server initialised on port ${port}...`)
 })
