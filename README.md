@@ -54,3 +54,10 @@ The problem was solved by:
 --> The house is randomly assigned using Math.random()
 ![alt text](README_images/image-11.png)
 ![alt text](README_images/image-12.png)
+
+7) 7th task completed: Backend Task 4: CRUD operations and DELETE and PATCH requests
+--> The task was implemented using ExpressJS , MongoDB and Postman
+--> post man was used to show the get and post requests
+--> The items were deleted and updated using the ID of the student 
+--> Appropriate mesages were deleted on completion of HTTP requests
+![alt text](README_images/image13.png)
