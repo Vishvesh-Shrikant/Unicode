@@ -68,11 +68,40 @@ app.post('/students', async (req, res)=>{
     return res.status(201).json({msg: "item created"})
 })
 
+//deleting student from database by finding using student ID 
+app.delete('/students/:id', async(req, res)=>{
+    const id=req.params.id
+    const result=await Student.findOneAndDelete({id:id})
+    if(result)
+        res.status(200).json({msg:" item deleted from db"})
+    else
+        res.status(404).json({msg:"Item not found"})
+})
+
+//updating house in database using id
+app.patch('/students/:id', async(req, res)=>{
+    const house=["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+    const newHouse=house[Math.floor(Math.random()*house.length)]
+    const itemExists= await Student.findOne({id:req.params.id})
+    if(itemExists)
+    {
+        const result = await Student.findOneAndUpdate({id:req.params.id}, {$set:{house:newHouse}})
+        if(result)
+            res.status(200).json({msg:"Item updated"})
+    }
+    else
+        res.status(404).json({msg:"Item not found"})
+    
+})
+
+
+
 //displaying data stored in the db 
 app.get('/students', async(req, res)=>{
     const student= await Student.find({})
     res.status(200).send(student)
 })
+
 
 
 app.listen(port,()=>{
